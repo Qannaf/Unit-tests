@@ -95,7 +95,7 @@ int main(int argc, char** argv)
 
 <a name="5"></a>
 ## Create Test project using Google Test
-![alt text](images/10.PNG?raw=true "sortie de code")
+![alt text](images/10.png?raw=true "sortie de code")
 ![alt text](images/11.PNG?raw=true "sortie de code")
 ![alt text](images/12.PNG?raw=true "sortie de code")
 
