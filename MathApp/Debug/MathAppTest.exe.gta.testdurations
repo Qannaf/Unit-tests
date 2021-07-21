@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>G:\Utilisateurs\qannaf.as\Desktop\Qannaf\tests unitaires\MathApp\Debug\MathAppTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="doubleNumTest.positiveValues" Duration="1" />
+    <TestDuration Test="doubleNumTest.nigativeValues" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
