@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="250" height="197" src="images/Gtest.jpg">
+</p>
+
 # Google Test with Visual Studio 2019
 This is a very simple tutorial about how to add Google Test (GTest) to Visual Studio 2019!
 
