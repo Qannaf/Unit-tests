@@ -4,5 +4,6 @@
   <TestDurations>
     <TestDuration Test="doubleNumTest.positiveValues" Duration="1" />
     <TestDuration Test="doubleNumTest.nigativeValues" Duration="1" />
+    <TestDuration Test="functionsCTest.positiveValues" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

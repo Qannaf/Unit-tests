@@ -21,9 +21,15 @@
     <ClCompile Include="doubleNum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="functionsC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="doubleNum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="functionsC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
