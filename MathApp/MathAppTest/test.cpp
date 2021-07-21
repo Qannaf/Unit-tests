@@ -3,8 +3,8 @@
 #include "../MathApp/functionsC.cpp"
 TEST(doubleNumTest, positiveValues)
 {
-	ASSERT_EQ(100, doubleNum(50));
-	ASSERT_EQ(12, doubleNum(6));
+	EXPECT_EQ(100, doubleNum(50));// if fail, test continues
+	ASSERT_EQ(12, doubleNum(6));//if fail, test interrupts
 	ASSERT_EQ(4, doubleNum(2));
 }
 

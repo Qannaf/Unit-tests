@@ -280,6 +280,10 @@ much more. There are even assertions that enable you to verify more complex
 states by providing custom predicates. For the complete list of assertions
 provided by GoogleTest, see the [Assertions Reference](reference/assertions.md).
 
+
+Some of the asserts available in Google Test are listed below (in this table, ASSERT_ is given as an example and can be switched with EXPECT_ ):
+<table class="" id="3beb17e6"><thead><tr class="ijRowHead" id="9b3f992b"></tr></thead><tbody><tr class="" id="a00f8794"><td id="e2f1b258" width="30%">Logical</td><td id="52199aef"><code class="code " id="6d6282df">ASSERT_TRUE(condition)</code><br><code class="code " id="dd371360">ASSERT_FALSE(condition)</code></td></tr><tr class="" id="5ab116cb"><td id="f4c94471">General comparison</td><td id="624e8c97"><code class="code " id="79bada22">ASSERT_EQ(expected, actual) / ASSERT_NE(val1, val2)</code><br><code class="code " id="2b6400b7">ASSERT_LT(val1, val2) / ASSERT_LE(val1, val2)</code><br><code class="code " id="5e340ba">ASSERT_GT(val1, val2) / ASSERT_GE(val1, val2)</code></td></tr><tr class="" id="7a0f4169"><td id="229d1b96">Float point comparison</td><td id="10931c79"><code class="code " id="83fd9f60">ASSERT_FLOAT_EQ(expected, actual)</code><br><code class="code " id="1cf7770">ASSERT_DOUBLE_EQ(expected, actual)</code><br><code class="code " id="43a428fd">ASSERT_NEAR(val1, val2, abs_error)</code></td></tr><tr class="" id="4f662955"><td id="48de95db">String comparison</td><td id="4794c0a5"><code class="code " id="f6ea5d01">ASSERT_STREQ(expected_str, actual_str) / ASSERT_STRNE(str1, str2)</code><br><code class="code " id="fb638f92">ASSERT_STRCASEEQ(expected_str, actual_str) / ASSERT_STRCASENE(str1, str2)</code></td></tr><tr class="" id="1bea9114"><td id="b4fe4273">Exception checking</td><td id="e001d1a9"><code class="code " id="389d17b0">ASSERT_THROW(statement, exception_type)</code><br><code class="code " id="6f39c049">ASSERT_ANY_THROW(statement)</code><br><code class="code " id="1c7ffe1a">ASSERT_NO_THROW(statement)</code></td></tr></tbody></table>
+
 <a name="11"></a>
 ## Simple Tests
 
@@ -617,11 +621,6 @@ NOTE: `ParseGUnitFlags()` is deprecated in favor of `InitGoogleTest()`.
 <a name="15"></a>
 ## Known Limitations
 
-*   Google Test is designed to be thread-safe. The implementation is thread-safe
-    on systems where the `pthreads` library is available. It is currently
-    _unsafe_ to use Google Test assertions from two threads concurrently on
-    other systems (e.g. Windows). In most tests this is not an issue as usually
-    the assertions are done in the main thread. If you want to help, you can
-    volunteer to implement the necessary synchronization primitives in
-    `gtest-port.h` for your platform.
+*   Google Test is designed to be thread-safe. The implementation is thread-safe on systems where the `pthreads` library is available. It is currently _unsafe_ to use Google Test assertions from two threads concurrently on other systems (e.g. Windows). In most tests this is not an issue as usually the assertions are done in the main thread. If you want to help, you can volunteer to implement the necessary synchronization primitives in `gtest-port.h` for your platform.
+
 
