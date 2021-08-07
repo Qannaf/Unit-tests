@@ -15,7 +15,7 @@ jobs:
         id: setup_msbuild
       - name: Run MSBuild
         id: run_msbuild
-        run: msbuild /p:Configuration=Debug /p:Platform=x86 HelloCovDemo.sln
+        run: msbuild /p:Configuration=Debug /p:Platform=x86 MathApp/MathApp.sln
       - name: Setup VSTest and add to PATH
         uses: darenm/Setup-VSTest@v1
         id: setup_vstest
